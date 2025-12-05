@@ -20,6 +20,8 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-extrabold: 800;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -380,6 +382,11 @@
       flex-direction: row;
     }
   }
+  .md\:justify-evenly {
+    @media (width >= 48rem) {
+      justify-content: space-evenly;
+    }
+  }
   .md\:px-\[50px\] {
     @media (width >= 48rem) {
       padding-inline: 50px;
@@ -512,7 +519,6 @@ footer div {
 }
 footer div li:hover {
   color: red;
-  border-bottom: 1px solid red;
   cursor: pointer;
 }
 .icons i {

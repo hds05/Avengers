@@ -128,7 +128,7 @@ footer div {
 
 footer div li:hover {
     color: red;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
     cursor: pointer;
 }
 
