@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+body {
+    /* @apply bg-gray-100; */
+    background: #000;
+    font-family: "Delius", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo::first-letter{
+    color: red
+}
+
+nav li {
+    color: white;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+nav li:hover {
+    color: red;
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero{
+    position: relative;
+}
+.hero .img {
+    /* position: relative; */
+    opacity: 0.5;
+    width: 100%;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: red;
+    font-weight: 800;
+}
+
+.btn {
+    width: 200px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border: 1px solid red;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid red;
+    color: red;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.card {
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+.gallery-img {
+    transition: 1s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    transition: 0.9s ease-in;
+    display: none;
+    /* transform: translateY(0%); */
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-100%);
+    opacity: 0;
+}
+
+.card .gallery-img:hover {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.card .content:hover {
+    display: block;
+    opacity: 1;
+
+    transform: translateY(0%);
+}
+
+/* footer */
+footer {
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex-basis: 25%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+footer div li:hover {
+    color: red;
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 20px;
+}
+.icons i:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+    color: red;
+}
