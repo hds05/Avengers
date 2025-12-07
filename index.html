@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <header class="w-screen flex justify-between fixed top-0 left-0 text-white px-[20px] py-[15px] md:py-[30px] md:px-[50px] bg-none z-10">
+    <header
+        class="w-screen flex justify-between fixed top-0 left-0 text-white px-[20px] py-[15px] md:py-[30px] md:px-[50px] bg-none z-10">
         <h1 class="text-2xl md:text-4xl logo">Avengers</h1>
         <nav class="flex items-center justify-center">
             <ul class="hidden md:block md:flex text-xl gap-4">
@@ -26,7 +27,7 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+
             <div class="block md:hidden">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -34,15 +35,14 @@
     </header>
 
     <!-- hero section -->
-    <section id="home" class="hero">
-        <div class="">
-            <img src="./images/home1.jpg" class="img" alt="">
-        </div>
-        <div class="absolute m-auto top-[20%] md:top-[50%] md:right-[25%] text-white flex flex-col gap-4 ju8stify-between items-center">
-            <h1 class="text-2xl md:text-5xl">Always protect the Earth</h1>
+    <section id="home" class="hero relative">
+        <img src="./images/home1.jpg" class="img" alt="">
+        <section
+            class="w-[100%] h-full text-white absolute top-0 flex flex-col  justify-center items-center">
+            <h1 class="text-2xl md:text-5xl font-extrabold">Always protect the Earth</h1>
             <p class="w-[50%] text:lg md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button class="!w-[100px] !text-[15px] md:text-2xl md:w-[200px] bg-red-700 btn">Get Started</button>
-        </div>
+        </section>
     </section>
 
     <!-- about section -->
@@ -63,67 +63,61 @@
 
     <!-- Gallery section -->
     <h2 id="gallery" class="mt-[80px] p-6">Gallery</h2>
-    <section class="grid grid-cols-3 gap-4">
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-1.jpg" alt="">
-            </div>
-            <div class="content">
+    <section class="grid grid-cols-3 gap-2">
+        <section class="card relative overflow-hidden ">
+            <img src="./images/g-1.jpg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Justice League</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-2.jpeg" alt="">
-            </div>
-            <div class="content">
+            </section>
+        </section>
+        <section class="relative overflow-hidden card">
+            <img src="./images/g-2.jpeg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-3.jpg" alt="">
-            </div>
-            <div class="content">
+            </section>
+        </section>
+        <section class="relative overflow-hidden card">
+            <img src="./images/g-3.jpg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Ant Man</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-4.jpg" alt="">
-            </div>
-            <div class="content">
+            </section>
+        </section>
+        <section class="relative overflow-hidden card">
+            <img src="./images/g-4.jpg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Guardians of The Galaxy</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-5.jpg" alt="">
-            </div>
-            <div class="content">
+            </section>
+        </section>
+        <section class="relative overflow-hidden card">
+            <img src="./images/g-5.jpg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
-        <div class="relative card">
-            <div class="gallery-img">
-                <img src="./images/g-6.jpg" alt="">
-            </div>
-            <div class="content">
+            </section>
+        </section>
+        <section class="relative overflow-hidden card">
+            <img src="./images/g-6.jpg" alt="">
+            <section
+                class="content text-center flex flex-col text-white absolute top-0 items-center justify-center w-[100%] h-[100%]">
                 <h3>Venom</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="btn">Order Now</button>
-            </div>
-        </div>
+            </section>
+        </section>
 
     </section>
 
@@ -155,8 +149,8 @@
     </section>
 
     <!-- footer section -->
-    <footer>
-        <div>
+    <footer class=""flex justify-center md:justify-between>
+        <div class="">
             <h2>Avengers</h2>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora doloribus quas neque
                 deleniti!</span>
@@ -167,7 +161,7 @@
                 <i class="fa-brands fa-youtube"></i>
             </span>
         </div>
-        <div>
+        <div class="">
             <h2>Links</h2>
             <ul class="flex flex-col gap-2">
                 <li><a href="#home">Home</a></li>
@@ -177,7 +171,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div>
+        <div class="">
             <h2>Services</h2>
             <ul class="flex flex-col gap-2">
                 <li>Web Design</li>
@@ -187,7 +181,7 @@
                 <li>Graphic Design</li>
             </ul>
         </div>
-        <div>
+        <div class="">
             <h2>Our Newsletter</h2>
             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ad doloribus dicta esse
                 laudantium.</span>
